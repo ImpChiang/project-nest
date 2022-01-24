@@ -18,11 +18,11 @@ import { ConfigModule } from '@nestjs/config';
   imports: [UserModule, AuthModule,ArticleModule,
     TypeOrmModule.forRoot({
       "type": "mysql",
-      "host": "120.25.217.217",
+      "host": "localhost",
       "port": 3306,
-      "username": "nestjs-root",
-      "password": "YAEaLMNHG37GrkeX",
-      "database": "nestjs-root",
+      "username": "username",
+      "password": "password",
+      "database": "mydatabase",
       "entities": ["dist/**/*.entity{.ts,.js}"],
       "synchronize": true
     }),
