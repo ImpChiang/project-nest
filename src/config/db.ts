@@ -2,10 +2,10 @@
 const productConfig = {
   mysql: {
     port: 3306,
-    host: '120.25.217.217',
-    user: 'nestjs-root',
-    password: 'YAEaLMNHG37GrkeX',
-    database: 'nestjs-root', // 库名
+    host: 'localhost',
+    user: 'user',
+    password: 'password',
+    database: 'database', // 库名
     connectionLimit: 10, // 连接限制
   },
 };
@@ -13,10 +13,10 @@ const productConfig = {
 const localConfig = {
   mysql: {
     port: 3306,
-    host: '120.25.217.217',
-    user: 'nestjs-root',
-    password: 'YAEaLMNHG37GrkeX',
-    database: 'nestjs-root', // 库名
+    host: 'localhost',
+    user: 'user',
+    password: 'password',
+    database: 'database', // 库名
     connectionLimit: 10, // 连接限制
   },
 };

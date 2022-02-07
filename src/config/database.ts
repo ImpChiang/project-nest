@@ -1,10 +1,10 @@
 export const DatabaseConfig = {
   "type": "mysql",
-  "host": "120.25.217.217",
+  "host": "localhost",
   "port": 3306,
-  "username": "nestjs-root",
-  "password": "YAEaLMNHG37GrkeX",
-  "database": "nestjs-root",
+  "username": "username",
+  "password": "password",
+  "database": "database",
   "entities": ["dist/**/*.entity{.ts,.js}"],
   "synchronize": true
 }

@@ -14,7 +14,7 @@ export class UserController {
   }
   @Post('login')
   async login(@Body() body: any) {
-    console.log('JWT验证 - Step 1: 用户请求登录');
+    console.log('JWT验证 - Step 1: 用户请求登录',body);
     const authResult = await this.authService.validateUser(body.mobile,body.password)
     // console.log(authResult,'authResult-------------');
     switch (authResult.code) {

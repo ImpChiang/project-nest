@@ -11,7 +11,7 @@ export class AuthService {
   async validateUser(mobile: number,password: string): Promise<any> {
     console.log('JWT验证 - Step 2: 校验用户信息');
     const user = await this.userService.findSon(mobile)
-    // console.log(user.data.user,'JWT验证 - Step 2: 校验用户信息---user');
+    console.log(user,'JWT验证 - Step 2: 校验用户信息---user');
     if (user.code == 200) {
       const data = user.data.user
       const hashedPassword = data.password // 已存数据库密码

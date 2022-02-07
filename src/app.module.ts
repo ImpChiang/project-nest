@@ -11,18 +11,18 @@ import { UserController } from "./common/user/user.controller";
 // import { CommodityController } from './common/commodity/commodity.controller';
 import { AppResolver } from './app.resolver';
 import { ArticleModule } from "./common/article/article.module";
-// import { fileModule } from "./common/file/file.module";
+import { fileModule } from "./common/file/file.module";
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [UserModule, AuthModule,ArticleModule,
+  imports: [UserModule, AuthModule,ArticleModule,fileModule,
     TypeOrmModule.forRoot({
       "type": "mysql",
-      "host": "localhost",
+      "host": "120.25.217.217",
       "port": 3306,
-      "username": "username",
-      "password": "password",
-      "database": "mydatabase",
+      "username": "nestjs-root",
+      "password": "YAEaLMNHG37GrkeX",
+      "database": "nestjs-root",
       "entities": ["dist/**/*.entity{.ts,.js}"],
       "synchronize": true
     }),

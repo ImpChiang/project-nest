@@ -4,20 +4,20 @@ exports.__esModule = true;
 var productConfig = {
     mysql: {
         port: 3306,
-        host: '120.25.217.217',
-        user: 'nestjs-root',
-        password: 'YAEaLMNHG37GrkeX',
-        database: 'nestjs-root',
+        host: 'localhost',
+        user: 'user',
+        password: 'password',
+        database: 'database',
         connectionLimit: 10
     }
 };
 var localConfig = {
     mysql: {
         port: 3306,
-        host: '120.25.217.217',
-        user: 'nestjs-root',
-        password: 'YAEaLMNHG37GrkeX',
-        database: 'nestjs-root',
+        host: 'localhost',
+        user: 'user',
+        password: 'password',
+        database: 'database',
         connectionLimit: 10
     }
 };
